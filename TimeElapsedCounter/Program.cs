@@ -7,25 +7,16 @@ namespace TimeElapsedCounter
     {
         static void Main(string[] args)
         {
-            string Route = "C:/";
+            string Route = "F:\\EventDates.txt";
             char separator = ',';
-            EventReader @event = new EventReader(Route, separator);
+            Clock clock = new Clock();
+            EventReader @event = new EventReader(Route, separator, clock);
+            DateStringBuilder stringBuilder = new DateStringBuilder();
+            EventWriter eventWriter = new EventWriter(stringBuilder);
+
             List<IEvent> eventList = @event.ReadEventDocument();
-
-        }
-    }
-
-    public class PrintEvents
-    {
-        private List<IEvent> _events;
-        public PrintEvents(List<IEvent> events)
-        {
-            _events = events;
-        }
-
-        public void printEvents()
-        {
-
+            eventWriter.Printconsole(eventList);
+            Console.ReadLine();
         }
     }
 

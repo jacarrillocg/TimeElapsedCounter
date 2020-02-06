@@ -1,0 +1,11 @@
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\bin\Debug\netcoreapp3.1\TimeElapsedCounter.exe
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\obj\Debug\netcoreapp3.1\TimeElapsedCounter.csprojAssemblyReference.cache
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\obj\Debug\netcoreapp3.1\TimeElapsedCounter.AssemblyInfoInputs.cache
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\obj\Debug\netcoreapp3.1\TimeElapsedCounter.AssemblyInfo.cs
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\bin\Debug\netcoreapp3.1\TimeElapsedCounter.deps.json
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\bin\Debug\netcoreapp3.1\TimeElapsedCounter.runtimeconfig.json
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\bin\Debug\netcoreapp3.1\TimeElapsedCounter.runtimeconfig.dev.json
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\bin\Debug\netcoreapp3.1\TimeElapsedCounter.dll
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\bin\Debug\netcoreapp3.1\TimeElapsedCounter.pdb
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\obj\Debug\netcoreapp3.1\TimeElapsedCounter.dll
+C:\Users\jose.carrillo\source\repos\TimeElapsedCounter\TimeElapsedCounter\obj\Debug\netcoreapp3.1\TimeElapsedCounter.pdb

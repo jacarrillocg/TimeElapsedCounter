@@ -7,10 +7,7 @@ namespace TimeElapsedCounter
         public string Title { get; set; }
 
         public DateTime EventDate { get; set; }
-        public DateTime Elapsedtime { get; set; }
-
-        public DateTime Missingtime { get; set; }
-
+        public TimeSpan ElapsedMissing { get; set; }
     }
 
 }

@@ -30,11 +30,5 @@ namespace TimeElapsedCounter
 
             return value;
         }
-
-        public static DateTime Getcurrenttime()
-        {
-            return DateTime.Now;
-        }
     }
-
 }

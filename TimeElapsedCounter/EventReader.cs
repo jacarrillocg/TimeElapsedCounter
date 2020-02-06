@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using TimeElapsedCounter.Interfaces;
 
 namespace TimeElapsedCounter
 {
@@ -9,9 +10,12 @@ namespace TimeElapsedCounter
     {
         private string _txtRoute;
         private char _separator;
-        public EventReader(string txtRoute, char separatorChar)
+        private IClock _clock;
+        public EventReader(string txtRoute, char separatorChar, IClock clock)
         {
             _txtRoute = txtRoute;
+            _separator = separatorChar;
+            _clock = clock;
         }
 
         public List<IEvent> ReadEventDocument()
@@ -32,27 +36,22 @@ namespace TimeElapsedCounter
         private void CreateEvent(List<IEvent> Events, string line)
         {
             string[] splitedArray = line.Split(_separator);
-            if (splitedArray.Length > 0)
+            if (splitedArray.Length >= 2)
             {
                 Event @event = new Event();
+
                 @event.Title = splitedArray[0].ToStringNotEmpty();
                 @event.EventDate = splitedArray[1].ToDateTime();
-
-                @event.Elapsedtime = GetElapsedTime();
-                @event.Missingtime = GetMissingtime();
+                 @event.ElapsedMissing= GetMissingElapsedtime(@event.EventDate);
 
                 Events.Add(@event);
             }
         }
 
-        private DateTime GetMissingtime()
+        private TimeSpan GetMissingElapsedtime(DateTime eventDate)
         {
-            throw new NotImplementedException();
-        }
-
-        private DateTime GetElapsedTime()
-        {
-            throw new NotImplementedException();
+            TimeSpan  time = _clock.Getcurrenttime() - eventDate;
+            return time;
         }
     }
 
